@@ -1,0 +1,2 @@
+# Credentials
+esse é o diretório para colocar **credenciais para acessar serviços externos**. Por exemplo, para buscar dados no Kaggle é necessário que você coloque um arquivo `kaggle.json` nesse repositório com seu `username` e `key`(API Key). Você pode obter as credenciais do Kaggle indo na configuração da sua conta e gerando uma API Key, que irá fazer o download do arquivo `kaggle.json` para você adicionar nesse diretório. **Não inclua nenhum arquivo dentro desse repositório no controle de versão, por questão de segurança!** 
