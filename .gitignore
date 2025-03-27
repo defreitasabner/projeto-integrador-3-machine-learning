@@ -8,8 +8,7 @@ venv/
 # Ambiente
 .env
 
-# Dados
-data/**
+# Projeto
 credentials/**
 
 # Exceções (arquivos que não devem ser ignorados)
