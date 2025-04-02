@@ -1,0 +1,3 @@
+*.ipynb merge=union
+*.ipynb	diff=jupyternotebook
+*.ipynb	merge=jupyternotebook

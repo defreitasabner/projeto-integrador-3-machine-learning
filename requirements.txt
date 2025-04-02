@@ -12,3 +12,5 @@ maxminddb-geolite2==2018.703
 geopy==2.4.1
 reverse_geocoder==1.5.1
 pycountry==24.6.1
+nbstripout==0.8.1
+nbdime==4.0.2
