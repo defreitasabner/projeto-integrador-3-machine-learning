@@ -4,7 +4,7 @@ from datetime import datetime
 
 from faker import Faker
 
-from src.gerador_dados.componentes.dado_gerado import DadoGerado
+from sistema_antifraude.gerador_dados.componentes.dado_gerado import DadoGerado
 
 
 class GeradorDadosFraudados:

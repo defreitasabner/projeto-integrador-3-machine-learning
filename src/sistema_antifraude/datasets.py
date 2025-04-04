@@ -1,6 +1,6 @@
 import os
 
-from src import config
+from sistema_antifraude import config
 
 
 def baixar_dados_externos_kaggle(
