@@ -2,9 +2,9 @@ import random
 from datetime import datetime, timedelta
 from typing import Any
 
-from src.gerador_dados.componentes.dado_gerado import DadoGerado
-from src.gerador_dados.componentes.gerador_dados_legitimos import GeradorDadosLegitimos
-from src.gerador_dados.componentes.gerador_dados_fraudados import GeradorDadosFraudados
+from sistema_antifraude.gerador_dados.componentes.dado_gerado import DadoGerado
+from sistema_antifraude.gerador_dados.componentes.gerador_dados_legitimos import GeradorDadosLegitimos
+from sistema_antifraude.gerador_dados.componentes.gerador_dados_fraudados import GeradorDadosFraudados
 
 
 class Gerador:

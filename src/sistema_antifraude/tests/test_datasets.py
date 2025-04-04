@@ -1,9 +1,7 @@
 import os
 import pytest
 
-from src.datasets import baixar_dados_externos_kaggle
-from src import config
-
+from sistema_antifraude.datasets import baixar_dados_externos_kaggle
 
 class TestDatasets:
 

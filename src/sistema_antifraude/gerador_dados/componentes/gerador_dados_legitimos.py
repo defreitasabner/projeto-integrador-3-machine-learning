@@ -4,7 +4,7 @@ from datetime import datetime
 
 from faker import Faker
 
-from src.gerador_dados.defaults import horarios
+from sistema_antifraude.gerador_dados.defaults import horarios
 
 
 class GeradorDadosLegitimos:

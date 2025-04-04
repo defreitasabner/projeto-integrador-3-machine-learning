@@ -1,18 +1,20 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "projeto_integrador"
+name = "sistema-antifraude"
 version = "0.1.0"
-description = "A machine learning project"
+description = "Um pacote detecção de fraudes em tentativas de login em sistemas financeiros utilizando machine learning."
 readme = "README.md"
 requires-python = ">=3.11"
 dynamic = ["dependencies"]
 
-[tool.setuptools]
-packages = ["src"]
-include-package-data = true
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
 
 [tool.setuptools.dynamic]
 dependencies = { file = "requirements.txt" }

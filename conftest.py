@@ -1,1 +1,1 @@
-pytest_plugins = ['src.tests.fixtures']
+pytest_plugins = ['src.sistema_antifraude.tests.fixtures']
