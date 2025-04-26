@@ -127,3 +127,25 @@ class Classificador:
         )
 
         return modelo_selecionado
+    
+if __name__ == "__main__":
+    classificador = Classificador()
+    pred = classificador.classificar([
+        {
+            'user_id': '12345678',
+            'device_id': 'abcdefgh',
+            'ipv4': '220.99.195.8',
+            'latitude': -23.5505,
+            'longitude': -46.6333,
+            'timestamp': '2023-10-01 12:00:00',
+        },
+        {
+            'user_id': '12345678',
+            'device_id': 'kjhhggf',
+            'ipv4': '220.99.195.8',
+            'latitude': 23.5505,
+            'longitude': 46.6333,
+            'timestamp': '2023-10-02 2:00:00',
+        },
+    ])
+    print(pred)
