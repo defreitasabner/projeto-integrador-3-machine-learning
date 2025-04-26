@@ -1,3 +1,4 @@
+from typing import Any
 import random
 
 import numpy as np
@@ -34,7 +35,11 @@ class Classificador:
         self.__parametros_regressao_logistica = parametros_regressao_logistica
         self.__modelo = self.__obter_melhor_modelo()
 
-    def classificar(self, dados, processar_dados = True):
+    def classificar(
+        self, 
+        dados: list[dict[str, Any]], 
+        processar_dados = True
+    ) -> dict[str, Any]:
         if processar_dados:
             dados = executar_pipeline_processamento(dados)
         X = dados[self.__features].iloc[-1:].copy()
@@ -42,8 +47,7 @@ class Classificador:
         probabilidade = round(float(self.__modelo.predict_proba(X).max()), 4)
         return {
             'fraude': classificacao,
-            'probabilidade': probabilidade,
-            'tipo_modelo': self.__modelo.__class__.__name__,
+            'probabilidade': probabilidade
         }
 
     def __obter_melhor_modelo(self):
