@@ -1,0 +1,10 @@
+kaggle==1.7.4.2
+numpy==2.2.4
+Faker==37.0.2
+pandas==2.2.3
+scikit-learn==1.6.1
+imbalanced-learn==0.13.0
+maxminddb-geolite2==2018.703
+geopy==2.4.1
+reverse_geocoder==1.5.1
+pycountry==24.6.1
